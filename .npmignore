@@ -1,0 +1,6 @@
+.github*
+.vscode*
+.gitignore*
+.gitattributes*
+*.Test.cs*
+Tests~
