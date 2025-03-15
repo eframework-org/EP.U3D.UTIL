@@ -2,6 +2,7 @@
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 
+#if UNITY_INCLUDE_TESTS
 using NUnit.Framework;
 using EP.U3D.UTIL;
 using UnityEngine;
@@ -165,3 +166,4 @@ internal class TestXLoom : MonoBehaviour
         Assert.IsFalse(called, "已停止的协程不应执行回调");
     }
 }
+#endif

@@ -2,6 +2,7 @@
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 
+#if UNITY_INCLUDE_TESTS
 using EP.U3D.UTIL;
 using NUnit.Framework;
 using System.Runtime.InteropServices;
@@ -89,3 +90,4 @@ internal class TestXObject
         Assert.IsTrue(jsonCompact.Contains("\"Name\":\"Test\""), "压缩的 JSON 应包含未格式化的 Name 字段");
     }
 }
+#endif

@@ -2,6 +2,7 @@
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 
+#if UNITY_INCLUDE_TESTS
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
@@ -709,3 +710,4 @@ internal class TestXComp
     }
     #endregion
 }
+#endif

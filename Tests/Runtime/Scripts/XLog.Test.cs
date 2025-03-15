@@ -2,6 +2,7 @@
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 
+#if UNITY_INCLUDE_TESTS
 using System;
 using System.IO;
 using NUnit.Framework;
@@ -408,3 +409,4 @@ internal class TestXLog
             $"总日志数量 {totalLogs} 不在预期范围内");
     }
 }
+#endif

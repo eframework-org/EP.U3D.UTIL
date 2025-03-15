@@ -2,6 +2,7 @@
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 
+#if UNITY_INCLUDE_TESTS
 using NUnit.Framework;
 using EP.U3D.UTIL;
 using UnityEngine.TestTools;
@@ -184,3 +185,4 @@ internal class TestXEvent
         Assert.That(callback4Order, Is.GreaterThan(callback3Order), "回调应该按注册顺序执行");
     }
 }
+#endif

@@ -2,6 +2,7 @@
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 
+#if UNITY_INCLUDE_TESTS
 using NUnit.Framework;
 using UnityEngine;
 using EP.U3D.UTIL;
@@ -263,3 +264,4 @@ internal class TestXString
         Assert.AreNotEqual(result1, result2, "连续生成的随机字符串应该不同。");
     }
 }
+#endif

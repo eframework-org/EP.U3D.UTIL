@@ -2,6 +2,7 @@
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 
+#if UNITY_INCLUDE_TESTS
 using NUnit.Framework;
 using EP.U3D.UTIL;
 using System;
@@ -126,3 +127,4 @@ internal class TestXLogTag
             "并发测试过程中不应出现异常");
     }
 }
+#endif

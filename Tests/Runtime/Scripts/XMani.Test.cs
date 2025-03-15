@@ -2,6 +2,7 @@
 // Use of this source code is governed by a MIT-style
 // license that can be found in the LICENSE file.
 
+#if UNITY_INCLUDE_TESTS
 using NUnit.Framework;
 using EP.U3D.UTIL;
 using System.IO;
@@ -86,3 +87,4 @@ internal class TestXMani
         Assert.IsTrue(result.Contains("file2.txt|md5_2|200"), "清单文本应包含第二个文件的完整信息");
     }
 }
+#endif
