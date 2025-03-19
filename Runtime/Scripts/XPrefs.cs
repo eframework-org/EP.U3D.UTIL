@@ -282,10 +282,10 @@ namespace EP.U3D.UTIL
             /// 4、解析 JSON 数据。
             /// 5、应用命令行参数覆盖。
             /// </remarks>
-            public virtual bool Read(string file = "")
+            public virtual bool Read(string file)
             {
                 Error = string.Empty;
-                if (!string.IsNullOrEmpty(file)) File = file;
+                File = file;
                 if (string.IsNullOrEmpty(File)) Error = "Null file for instantiating preferences.";
                 else if (!XFile.HasFile(File)) Error = $"Non exist file {File} for instantiating preferences.";
                 else if (!Parse(encrypt ? XString.Decrypt(XFile.OpenText(File)) : XFile.OpenText(File), out var perror)) Error = perror;
