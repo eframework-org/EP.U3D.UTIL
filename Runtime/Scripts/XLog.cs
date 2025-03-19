@@ -421,6 +421,8 @@ namespace EP.U3D.UTIL
 
             // 更新最大日志级别
             levelMax = tempLevel;
+
+            XLog.Notice("XLog.Setup: setup succeed with {0} adapters, max level: {1}.", adapters.Count, levelMax.ToString());
         }
 
         /// <summary>
@@ -432,6 +434,7 @@ namespace EP.U3D.UTIL
             {
                 adapter.Flush();
             }
+            XLog.Notice("XLog.Flush: flush succeed with {0} adapters.", adapters.Count);
         }
 
         /// <summary>
@@ -439,6 +442,7 @@ namespace EP.U3D.UTIL
         /// </summary>
         public static void Close()
         {
+            XLog.Notice("XLog.Close: begin to close with {0} adapters.", adapters.Count);
             foreach (var adapter in adapters.Values)
             {
                 adapter.Close();
