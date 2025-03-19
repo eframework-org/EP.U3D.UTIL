@@ -341,18 +341,18 @@ namespace EP.U3D.UTIL
             };
             UnityEditor.EditorApplication.quitting += Close;
 
-            // 取消监听编译状态
             // 通过-runTests启动editmode测试时，若脚本变更，会触发编译，导致XLog.Close被调用，进而导致测试失败
             // 正常情况下，监听到正在编译则主动关闭，避免日志文件冲突，编译完成后会自动调用 OnInit，-runTests模式下未调用
-            // static void onUpdate()
-            // {
-            //     if (UnityEditor.EditorApplication.isCompiling)
-            //     {
-            //         Close();
-            //         UnityEditor.EditorApplication.update -= onUpdate;
-            //     }
-            // }
-            // UnityEditor.EditorApplication.update += onUpdate;
+            // 这里又增加了一个 isPlaying 的判断，避免在编辑器模式下，编译时关闭日志
+            static void onUpdate()
+            {
+                if (Application.isPlaying && UnityEditor.EditorApplication.isCompiling)
+                {
+                    Close();
+                    UnityEditor.EditorApplication.update -= onUpdate;
+                }
+            }
+            UnityEditor.EditorApplication.update += onUpdate;
 #endif
             Application.quitting += Close;
             SceneManager.sceneUnloaded += scene => Flush();
