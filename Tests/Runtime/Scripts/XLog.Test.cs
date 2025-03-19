@@ -23,7 +23,7 @@ using System.Linq;
 /// 4. 异常处理
 /// 5. 日志标签系统
 /// </summary>
-internal class TestXLog
+public class TestXLog
 {
     /// <summary>
     /// 测试日志文件的临时存储路径

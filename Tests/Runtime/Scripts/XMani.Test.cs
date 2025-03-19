@@ -7,7 +7,7 @@ using NUnit.Framework;
 using EP.U3D.UTIL;
 using System.IO;
 
-internal class TestXMani
+public class TestXMani
 {
     [Test]
     public void Parse()

@@ -12,7 +12,7 @@ using EP.U3D.UTIL;
 /// <summary>
 /// XPrefs 模块的单元测试类，验证配置系统的基本功能、数据类型支持、配置继承和变量替换等特性。
 /// </summary>
-internal class TestXPrefs
+public class TestXPrefs
 {
     [Test]
     public void Basic()

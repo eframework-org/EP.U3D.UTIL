@@ -10,7 +10,7 @@ using System.Linq;
 using UnityEngine;
 using EP.U3D.UTIL;
 
-internal class TestXLogFile
+public class TestXLogFile
 {
     private class TestCase
     {

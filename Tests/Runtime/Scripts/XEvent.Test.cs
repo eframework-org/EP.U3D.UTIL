@@ -12,7 +12,7 @@ using System.Text.RegularExpressions;
 /// <summary>
 /// XEvent 单元测试类，验证事件管理器的核心功能。
 /// </summary>
-internal class TestXEvent
+public class TestXEvent
 {
     /// <summary>
     /// 测试事件注册功能。

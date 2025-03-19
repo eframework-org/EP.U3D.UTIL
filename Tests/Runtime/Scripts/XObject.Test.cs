@@ -7,7 +7,7 @@ using EP.U3D.UTIL;
 using NUnit.Framework;
 using System.Runtime.InteropServices;
 
-internal class TestXObject
+public class TestXObject
 {
     private struct TestStruct
     {

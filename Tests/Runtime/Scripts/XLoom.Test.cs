@@ -10,7 +10,7 @@ using System;
 using System.Collections;
 using UnityEngine.TestTools;
 
-internal class TestXLoom : MonoBehaviour
+public class TestXLoom : MonoBehaviour
 {
     [Test]
     public void SetTimeout()

@@ -9,7 +9,7 @@ using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
-internal class TestXLogTag
+public class TestXLogTag
 {
     [Test]
     public void Basic()

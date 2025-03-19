@@ -12,7 +12,7 @@ using EP.U3D.UTIL;
 /// <summary>
 /// XComp组件工具集单元测试
 /// </summary>
-internal class TestXComp
+public class TestXComp
 {
     #region 测试基础设施
     private GameObject rootObject;

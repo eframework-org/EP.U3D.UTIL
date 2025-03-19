@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using EP.U3D.UTIL;
 using System.Collections;
 
-internal class TestXPool
+public class TestXPool
 {
     [Test]
     public void SObject()

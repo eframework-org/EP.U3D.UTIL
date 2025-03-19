@@ -20,7 +20,7 @@ using System.Threading.Tasks;
 /// 4. 压缩解压功能
 /// 5. 文件校验（MD5）
 /// </remarks>
-internal class TestXFile
+public class TestXFile
 {
     /// <summary>
     /// 测试用的基础路径和相关文件路径。

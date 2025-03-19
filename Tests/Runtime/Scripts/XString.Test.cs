@@ -9,7 +9,7 @@ using EP.U3D.UTIL;
 using UnityEngine.TestTools;
 using System.Text.RegularExpressions;
 
-internal class TestXString
+public class TestXString
 {
     [TestCase("Hello, {0}!", new object[] { "World" }, "Hello, World!", Description = "测试基本的单参数替换")]
     [TestCase("Hello, {0}! You have {1} new messages.", new object[] { "Alice", 5 }, "Hello, Alice! You have 5 new messages.", Description = "测试多参数替换")]

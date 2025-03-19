@@ -12,7 +12,7 @@ using UnityEngine;
 /// <summary>
 /// XEnv 环境工具类的单元测试。
 /// </summary>
-internal class TestXEnv
+public class TestXEnv
 {
     /// <summary>
     /// 清理测试环境。

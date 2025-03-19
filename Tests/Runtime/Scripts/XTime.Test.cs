@@ -17,7 +17,7 @@ using EP.U3D.UTIL;
 /// - 零点时间计算
 /// - 时间格式化
 /// </remarks>
-internal class TestXTime
+public class TestXTime
 {
     private DateTime testDateTime;
     private int testTimestamp;

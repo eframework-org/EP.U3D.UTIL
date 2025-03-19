@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using EP.U3D.UTIL;
 
-internal class TestXLogStd
+public class TestXLogStd
 {
     private XLog.StdAdapter adapter;
     private XPrefs.IBase prefs;
