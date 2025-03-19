@@ -115,8 +115,6 @@ string text = manifest.ToString();
 
 ## 常见问题
 
-更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
-
 ### 1. 清单解析失败
 - 检查清单文件格式是否正确（文件名|MD5值|文件大小）
 - 确保文件编码为 UTF-8
@@ -131,6 +129,8 @@ string text = manifest.ToString();
 - 确保文件名区分大小写
 - 验证 MD5 值的计算是否正确
 - 检查文件大小是否准确记录
+
+更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
 
 ## 项目信息
 

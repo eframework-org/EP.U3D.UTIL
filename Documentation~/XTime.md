@@ -70,14 +70,14 @@ XTime.Format(timestamp, "yyyy-MM-dd");      // "2024-03-21"
 
 ## 常见问题
 
-更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
-
 ### 1. 时区问题
 XTime 的时间戳计算会自动考虑本地时区，初始时间（1970-01-01）会根据 `TimeZoneInfo.Local.BaseUtcOffset` 进行调整。
 
 ### 2. 格式化精度
 - 秒级时间戳格式化默认精确到秒（HH:mm:ss）
 - 毫秒级时间戳和 DateTime 格式化默认精确到毫秒（HH:mm:ss.fff）
+
+更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
 
 ## 项目信息
 

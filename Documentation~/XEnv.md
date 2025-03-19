@@ -141,8 +141,6 @@ var result = text.Eval(XEnv.Vars);
 
 ## 常见问题
 
-更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
-
 ### 1. 路径获取问题
 Q: 为什么在不同平台获取的 LocalPath 路径不同？
 A: LocalPath 会根据运行平台返回适合的路径：
@@ -162,6 +160,8 @@ A: 支持以下格式：
 - -key=value 或 --key=value
 - -key value 或 --key value
 - -flag 或 --flag（无值标志）
+
+更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
 
 ## 项目信息
 

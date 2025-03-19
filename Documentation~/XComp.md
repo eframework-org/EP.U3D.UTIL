@@ -116,8 +116,6 @@ public class CustomIndexer : MonoBehaviour, IIndexable
 
 ## 常见问题
 
-更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
-
 ### 1. Transform 获取失败
 - 检查传入对象是否为 null
 - 确认对象类型是否为 Transform、GameObject 或 Component
@@ -132,6 +130,8 @@ public class CustomIndexer : MonoBehaviour, IIndexable
 - 确认目标对象名称是否正确
 - 检查是否在正确的层级范围内查找
 - 验证目标组件类型是否正确
+
+更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
 
 ## 项目信息
 

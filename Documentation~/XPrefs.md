@@ -127,8 +127,6 @@ string result = XPrefs.Local.Eval("${Prefs.user.name} is ${Prefs.user.age}");
 
 ## 常见问题
 
-更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
-
 ### 1. 配置无法保存
 - 检查配置对象是否可写（writeable = true）。
 - 确认文件路径有效且具有写入权限。
@@ -143,6 +141,8 @@ string result = XPrefs.Local.Eval("${Prefs.user.name} is ${Prefs.user.age}");
 - 检查网络连接是否正常。
 - 确认远程服务器地址正确。
 - 验证超时和重试参数设置。
+
+更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
 
 ## 项目信息
 

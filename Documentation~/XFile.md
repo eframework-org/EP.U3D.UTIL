@@ -140,8 +140,6 @@ if (!string.IsNullOrEmpty(md5))
 
 ## 常见问题
 
-更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
-
 ### 1. Android 平台文件访问
 Q: 如何访问 Android 平台的 JAR 文件？
 A: 对于以 "jar:file://" 开头的路径，XFile 会自动使用 Android 原生接口访问文件。
@@ -153,6 +151,8 @@ A: XFile 统一使用正斜杠（/）作为路径分隔符，会自动转换反�
 ### 3. 压缩文件大小限制
 Q: 压缩大文件时出现内存不足？
 A: Android 平台使用原生接口实现压缩解压，避免 SharpZipLib 的内存泄露问题。
+
+更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
 
 ## 项目信息
 

@@ -151,8 +151,6 @@ string result = "Hello ${name}".Eval(evaluator);
 
 ## 常见问题
 
-更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
-
 ### 1. 格式化字符串失败
 - 检查格式化字符串中的占位符数量是否与参数数量匹配。
 - 确保使用的格式说明符与参数类型兼容。
@@ -167,6 +165,8 @@ string result = "Hello ${name}".Eval(evaluator);
 - 确保字符串格式正确，包括括号和逗号。
 - Vector3 必须包含 3 个数值，Vector4 必须包含 4 个数值。
 - 数值必须可以转换为浮点数。
+
+更多问题，请查阅[问题反馈](../CONTRIBUTING.md#问题反馈)。
 
 ## 项目信息
 
