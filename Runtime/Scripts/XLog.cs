@@ -341,15 +341,18 @@ namespace EP.U3D.UTIL
             };
             UnityEditor.EditorApplication.quitting += Close;
 
-            static void onUpdate()
-            {
-                if (UnityEditor.EditorApplication.isCompiling)
-                {
-                    Close();
-                    UnityEditor.EditorApplication.update -= onUpdate;
-                }
-            }
-            UnityEditor.EditorApplication.update += onUpdate;
+            // 取消监听编译状态
+            // 通过-runTests启动editmode测试时，若脚本变更，会触发编译，导致XLog.Close被调用，进而导致测试失败
+            // 正常情况下，监听到正在编译则主动关闭，避免日志文件冲突，编译完成后会自动调用 OnInit，-runTests模式下未调用
+            // static void onUpdate()
+            // {
+            //     if (UnityEditor.EditorApplication.isCompiling)
+            //     {
+            //         Close();
+            //         UnityEditor.EditorApplication.update -= onUpdate;
+            //     }
+            // }
+            // UnityEditor.EditorApplication.update += onUpdate;
 #endif
             Application.quitting += Close;
             SceneManager.sceneUnloaded += scene => Flush();
@@ -382,7 +385,6 @@ namespace EP.U3D.UTIL
             // 清理旧的适配器
             Flush();
             Close();
-            adapters.Clear();
 
             // 初始化适配器
             var tempLevel = LevelType.Undefined;
