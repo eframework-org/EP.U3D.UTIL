@@ -38,10 +38,9 @@ jobs:
           if [ -n "${{ github.event.inputs.version }}" ]; then
             VERSION="${{ github.event.inputs.version }}"
           else
-            # 获取最新tag版本号并加1
-            LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
-            LATEST_VERSION=${LATEST_TAG#v}
-            IFS='.' read -r -a VERSION_PARTS <<< "$LATEST_VERSION"
+            # 从package.json获取当前版本号并加1
+            CURRENT_VERSION=$(node -p "require('./package.json').version")
+            IFS='.' read -r -a VERSION_PARTS <<< "$CURRENT_VERSION"
             PATCH=$((VERSION_PARTS[2] + 1))
             VERSION="${VERSION_PARTS[0]}.${VERSION_PARTS[1]}.$PATCH"
           fi
