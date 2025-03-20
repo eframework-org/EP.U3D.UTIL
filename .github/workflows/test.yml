@@ -59,15 +59,12 @@ jobs:
           artifactsPath: Results
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           checkName: 测试 ${{ matrix.testMode }} 报告
-          coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+EP*;+ET*'
           useHostNetwork: true
 
       - name: 上传报告
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: Test.Reports.${{ matrix.testMode }}
-          path: |
-            ${{ steps.tests.outputs.artifactsPath }}
-            ${{ steps.tests.outputs.coveragePath }}
+          name: Test.${{ matrix.testMode }}.Reports
+          path: ${{ steps.tests.outputs.artifactsPath }}
           retention-days: 14
