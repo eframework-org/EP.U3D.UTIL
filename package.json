@@ -26,7 +26,6 @@
   "dependencies": {},
   "puerAdapter": ".puer",
   "puerExports": [
-    "EP.U3D.UTIL",
-    "UnityEngine"
+    "EP.U3D.UTIL"
   ]
 }
