@@ -56,9 +56,10 @@ jobs:
           scopedRegistryUrl: https://registry.npmjs.org/
           registryScopes: 'et, ep'
           testMode: ${{ matrix.testMode }}
+          artifactsPath: ${{ matrix.testMode }}
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           checkName: 测试 ${{ matrix.testMode }} 报告
-          coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport;assemblyFilters:+my.assembly.*'
+          coverageOptions: 'generateAdditionalMetrics;generateHtmlReport;generateBadgeReport'
           useHostNetwork: true
 
       - name: 上传报告
